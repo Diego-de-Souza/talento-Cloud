@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroTur</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 80px;
+        }
+        span {
+            display: flex;
+            width: 20%;
+            padding-left: 4em;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            width: 100%;
+        }
+        li {
+            display: flex;
+            margin-right: 3em;
+            font-size: 2em;
+            background-color: aqua;
+        }
+        a {
+            text-decoration: none;
+            padding: 0.2em 1em;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4em;
+        }
+        #container-principal {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 70vh;
+
+        }
+        #container-principal__aside1{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 60%;
+            background-image: url(https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            margin-right: 10px;
+            justify-content: center;
+            align-items: end;
+            font-size: 3em;
+            margin-bottom: 2em;
+            color: #fff;
+        }
+        #container-principal__right {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 100%;
+        }
+        #container-principal__right-superior{
+            display: flex;
+            width: auto;
+            height: 50%;
+            background-image: url(https://images.pexels.com/photos/13281287/pexels-photo-13281287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-position: 50% 50%;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-items: end;
+            font-size: 2em;
+            color: #fff;
+        }
+
+        #container-principal__right-inferior{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            height: 50%;
+         }
+        .container-principal__right-inferior__child1 {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            background-image: url(https://images.pexels.com/photos/18370013/pexels-photo-18370013/free-photo-of-coliseu-anfiteatro-antigo-antepassados.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-position: 50% 50%;
+            margin-right: 10px;
+            justify-content: center;
+            align-items: end;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        
+        .container-principal__right-inferior__child2{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            background-image: url(https://images.pexels.com/photos/1423580/pexels-photo-1423580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-position: 50% 50%;
+            justify-content: center;
+            align-items: end;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        #container-conteudo-turistico{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            font-size: 3em;
+        }
+        #container-conteudo-turistico__section{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(6em, 4fr));
+            margin-top: 2em;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            width: 95%;
+            padding: 1em 1em;
+
+        }
+        
+        .container-conteudo-turistico__section-banners{
+            border-radius: 1em;
+            box-shadow: 4px 4px 15px rgb(12, 40, 88);
+
+            background-color: rgba(189, 190, 190, 0.573);
+        }
+        .container-conteudo-turistico__section-banners__img {
+            border-radius: 1em 1em 0em 0em ;   
+            width: 100%;
+        }
+        .container-conteudo-turistico__section-banners > span{
+            margin: 0px;
+            padding: 0px;
+            font-size: 0.8em;
+            width: 100%;
+            justify-content: center;
+            background-color: chocolate;
+        }
+        
+        .container-conteudo-turistico__section-banners__texto{
+            padding: 0.8em 0.5em;
+        }
+        .container-conteudo-turistico__section-banners__texto > p {
+            font-size: 0.4em;
+            text-align: justify;
+        }
+
+        #container-pacotes {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            font-size: 3em;
+        }
+        #container-pacotes__secoes {
+            display: flex;
+            width: 100%;
+            margin-top: 1em;
+        }
+        #container-pacotes__secoes__caixa{
+            display: flex;
+            flex-direction: column;
+            width: 69%;
+            padding: 2em;
+        }
+        .container-pacotes__secoes-units {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .container-pacotes__secoes-units > label {
+            display: flex;
+            width: 4em;
+            height: 2em;
+            margin-right: 1.5em;
+        }
+        .container-pacotes__secoes-units > p {
+            color: blue;
+        }
+        #container-pacotes__secoes__aside{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            align-items: center;
+            background-color: #9c9c9c;
+            border-radius: 0.5em;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+            margin-top: 1em;
+        }
+        footer > ul > li {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>EuroTur</span>
+        <nav>
+            <ul>
+                <li translate="no"><a href="#container-principal">Home</a></li>
+                <li><a href="#container-conteudo-turistico">Pontos Turisticos</a></li>
+                <li><a href="">Pacotes</a></li>
+            </ul>
+        </nav>      
+    </header>
+    <main>
+        <section>
+            <div id="container-principal">
+                <div id="container-principal__aside1">
+                        Louvre museum
+                </div>
+                <div id="container-principal__right">
+                    <div id="container-principal__right-superior">
+                        Palácio de Christiansborg
+                    </div>
+                    <div id="container-principal__right-inferior">
+                        <div class="container-principal__right-inferior__child1">
+                            Coliseu
+                        </div>
+                        <div class="container-principal__right-inferior__child2">Muralha da China</div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="container-conteudo-turistico">
+            <h2>PONTOS TURISTICOS</h2>
+            <section id="container-conteudo-turistico__section">
+                <div class="container-conteudo-turistico__section-banners">
+                    <img class="container-conteudo-turistico__section-banners__img" src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+                    <span>Torre Eiffel</span>
+                    <div class="container-conteudo-turistico__section-banners__texto">
+                        <p>A Torre Eiffel é uma construção de ferro de 300 metros de altura que foi criada para a Exposição Universal de Paris de 1889.</p> 
+                        <p>Atualmente é o símbolo mais representativo de Paris.</p>
+                    </div>
+                </div>
+                <div class="container-conteudo-turistico__section-banners">
+                    <img class="container-conteudo-turistico__section-banners__img" src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+                    <span>Coliseu</span>
+                    <div class="container-conteudo-turistico__section-banners__texto">
+                        <p>O Coliseu de Roma ou Anfiteatro Flaviano é um grandioso monumento histórico e arquitetônico de formato cilíndrico que está localizado na capital da Itália: Roma.</p>
+                        <p>Construído na Antiguidade, o Coliseu de Roma atualmente é um dos pontos turísticos mais visitados da cidade.</p>
+                    </div>
+                </div>
+                <div class="container-conteudo-turistico__section-banners">
+                    <img class="container-conteudo-turistico__section-banners__img" src="https://images.pexels.com/photos/3071145/pexels-photo-3071145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+                    <span>BigBen</span>
+                    <div class="container-conteudo-turistico__section-banners__texto">
+                        <p>O relógio da Torre do Big Ben, composto por um relógio de 7 metros de diâmetro em cada um dos seus lados, começou a funcionar em maio de 1859. Hoje em dia se tornou o símbolo da nação e suas badaladas são transmitidas diariamente pela emissora de rádio da BBC.</p>
+                    </div>
+                </div>
+                <div class="container-conteudo-turistico__section-banners">
+                    <img class="container-conteudo-turistico__section-banners__img" src="https://images.pexels.com/photos/1460145/pexels-photo-1460145.jpeg" alt="" srcset="">
+                    <span>Catedral de Notre Dame</span>
+                    <div class="container-conteudo-turistico__section-banners__texto">
+                        <p>Construída entre 1163 e 1245 na Île de la Cité, a Catedral de Notre Dame de Paris é uma das catedrais góticas mais antigas do mundo. O nome da catedral significa Nossa Senhora e é dedicada à Virgem Maria.</p>
+                    </div>
+                </div>
+                <div class="container-conteudo-turistico__section-banners">
+                    <img class="container-conteudo-turistico__section-banners__img" src="https://images.pexels.com/photos/2031967/pexels-photo-2031967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+                    <span>Fontana di Trevi</span>
+                    <div class="container-conteudo-turistico__section-banners__texto">
+                        <p>Impossível falar das atrações de Roma e não incluir aquela que é sua mais famosa fonte: a Fontana di Trevi! Afinal, esta fonte do século XVIII é uma das obras mais visitadas de Roma e da Itália. Por causa de toda sua imponência e beleza, ela não deve ficar de fora da sua visita também!</p>
+                    </div>
+                </div>
+                <div class="container-conteudo-turistico__section-banners">
+                    <img class="container-conteudo-turistico__section-banners__img" src="https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+                    <span>Museu de Orsay</span>
+                    <div class="container-conteudo-turistico__section-banners__texto">
+                        <p>O Museu D’Orsay está localizado em uma antiga estação de trem que foi inaugurada no ano de 1900 para a Exposição Mundial de Paris. A estação teve um elevado tráfego de trens até 1939.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="container-pacotes">
+            <h2>PACOTES</h2>
+            <section id="container-pacotes__secoes">
+                <section id="container-pacotes__secoes__caixa">
+                    <div class="container-pacotes__secoes-units">
+                        <label>executivo</label>
+                        <p>R$ 803,50</p>
+                    </div>
+                    <div class="container-pacotes__secoes-units">
+                        <label>premium</label>
+                        <p>R$ 1220,38</p>
+                    </div>
+                    <div class="container-pacotes__secoes-units">
+                        <label>tester</label>
+                        <p>R$ 935,29</p>
+                    </div>
+                    <div class="container-pacotes__secoes-units">
+                        <label>luxo</label>
+                        <p>R$ 1050,25</p>
+                    </div>
+                    <div class="container-pacotes__secoes-units">
+                        <label>presidencial</label>
+                        <p>R$ 3582,15</p>
+                    </div>
+                </section>
+                <aside id="container-pacotes__secoes__aside">
+                    <h3>Promoção</h3>
+                    <div>
+                        exemplo
+                    </div>
+                </aside>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span>EuroTur</span>
+        <ul>
+            <li>Facebook</li>
+            <li>Linkedin</li>
+            <li>Instagram</li>
+        </ul>
+    </footer>
+</body>
+</html>

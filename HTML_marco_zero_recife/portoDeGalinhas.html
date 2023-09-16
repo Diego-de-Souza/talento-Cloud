@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto de Galinhas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 120px;
+            background-color: #646363;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        #menu-locais {
+            background-color:#3d3d3d;
+        }
+        nav > ul {
+            display: flex;
+            flex-direction: row;
+        }
+        nav > ul > li {
+            display: flex;
+            
+            padding: 0.5em;
+            margin: 0px 4em;
+            
+        }
+        a {
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        #container-slide {
+            display: flex;
+            flex-direction: column;
+            width: 95vw;
+            height: 90vh;
+            background-image: url(https://img.freepik.com/fotos-gratis/tiro-em-escala-de-cinza-de-embarcacoes-ou-embarcacoes-marinhas-perto-de-uma-cabana-na-praia_181624-3785.jpg?size=626&ext=jpg&ga=GA1.1.522103892.1689128395&semt=ais);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+        }
+        span {
+            text-align: center;
+            font-size: 3em;
+            padding: 0.2em 0.5em;
+            color: #fff;
+            background-color: #646363;
+            border-radius: 0.5em;
+        }
+        #container-conteudo {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            align-items: center;
+        }
+        #container-conteudo > h2 {
+            font-size: 3em;
+            padding: 1em 0em;
+            width: 100%;
+            background-color: #646363;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+        }
+        #container-conteudo__textual {
+            display: flex;
+            width: 100%;
+            background-image: url(https://www.viajali.com.br/wp-content/uploads/2020/01/fotos-de-porto-de-galinhas-26-730x730.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-position: fixed;
+        }
+        #container-conteudo__textual > article {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 2em 3em;
+            text-indent: 2em;
+            font-size: 1.5em;
+            text-align: justify;
+            background-color: #64636387;
+        }
+        #container-conteudo__textual > article > p {
+            display: flex;
+            width: 100%;
+            background-color: #3d3d3d;
+            padding-top: 0.5em;
+            padding-bottom: 1.5em;
+            text-align: center;
+            color: #fff;
+        }
+        #container-conteudo__textual > article > img {
+            border: 1px solid #ffffffaa;
+
+        }
+        #container-conteudo__textual > aside {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 100%;
+            background-color: #3faae8dc;
+        }
+        #container-conteudo__textual > aside > span {
+            background-color: #3faae8dc;
+        }
+        #container-conteudo__textual > aside > p {
+            display: flex;
+            flex-direction: column;
+            margin: 1em 2em;
+            text-align: justify;
+        }
+        #container-conteudo__textual > aside > img {
+            display: block;
+            width: 100%;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 120px;
+            justify-content: center;
+            background-color: #3d3d3d;
+        }
+        
+        #footer_span {
+            display: flex;
+            background: none;
+            font-size: 1em;
+            color: #3faae8dc;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Intagram</a></li>
+                <li><a href="">Youtube</a></li>
+            </ul>
+        </nav>
+        <nav id="menu-locais">
+            <ul>
+                <li><a href="index.html">Marco Zero</a></li>
+                <li><a href="#">Porto de Galinhas</a></li>
+                <li><a href="oficina.html">Francisco Brennand</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container-slide">
+            <span>Porto de Galinhas, um paraíso em Recife</span>
+        </section>
+        <section id="container-conteudo">
+            <h2>Porto de Galinhas - Recife</h2>
+            <section id="container-conteudo__textual">
+                <article>
+                    <p>
+                        Porto de Galinhas, é um distrito localizado na cidade de Ipojuca, em Pernambuco, a cerca de 60 km de Recife. A vila é um dos melhores destinos de praia não apenas do Nordeste, mas do Brasil. Não é preciso dizer muito para explicar o lugar: suas praias, caracterizadas pelas águas verdes e pelas entre piscinas naturais, saltam aos olhos e arrancam elogios dos mais descrentes. O distrito e tem a facilidade de estar próximo do Aeroporto Internacional do Recife, fato que facilita muito chegada a Porto de Galinhas. Suas águas mornas e agradáveis em todo o ano convidam para um mergulho e têm potencial para conquistar pessoas de todas as idades. </p>
+                        <img src="https://www.viajali.com.br/wp-content/uploads/2020/01/fotos-de-porto-de-galinhas-3-730x484.jpg" alt="">
+                    <p>
+                        Porto de Galinhas, é um dos hits da região e ponto de partida dos jangadeiros, que levam até as piscinas naturais onde os peixinhos estão. Nas piscinas a beleza da natureza fala alto e faz entender por que Porto é esse sucesso todo. Na Praia de Muro Alto, outro local importante para incluir no roteiro, é a calmaria que impressiona. A praia parece uma lagoa e quem mergulha em suas águas corre sério risco de não querer voltar para casa. Porto tem praias diferentes, com elementos distintos, porém uma beleza singular.</p>
+                    <img src="https://img.freepik.com/fotos-gratis/bela-praia-tropical-mar-e-oceano-com-coqueiro-e-guarda-chuva-e-cadeira-no-ceu-azul_74190-8827.jpg?size=626&ext=jpg&ga=GA1.2.522103892.1689128395&semt=ais" alt="">   
+                    <p>No verão, o destino fica lotado e concorrido, fato que afasta muita gente e intimida o bolso. Porto de Galinhas vive duas realidades: uma dos resorts glamurosos e outra das pousadas. A localização, contudo, não intefere na diversão e no visual - para onde quer que se olhe a paisagem é de tirar o fôlego.</p>
+                        <p>Para além do mar, o lugar oferece passeios variados, lojinhas ótimas para comprar artesanato, um povo acolhedor e a culinária arretada típica do estado. Nos cardápios, com opções para todos os gostos, valorizam-se a proximidade com o mar e os sabores do sertão. Difícil não agradar</p>
+                    
+                    <img src="https://img.freepik.com/fotos-gratis/bela-foto-aerea-de-casas-e-pequenos-barcos-estacionados-perto-da-praia_181624-18554.jpg?size=626&ext=jpg&ga=GA1.1.522103892.1689128395&semt=ais" alt="">
+                    <p>Porto de Galinhas está localizada a apenas 60 km do Aeroporto do Recife (REC), em Pernambuco. A partir do aeroporto os visitantes podem pegar um transfer, táxi, Uber ou ainda fazer o aluguel de um carro para ir direto ao distrito.</p>
+                    <p>Porto de Galinhas tem sol e altas tempraturas o ano inteiro, então é sempre tempo de aproveitar o bom clima da cidade. Ainda assim, é bom ter em mente que entre abril e julho, a região recebe mais chuvas, o que não impede de aproveitar bons dias de sol nesse período.</p>
+                    <p>Pensando na melhor época para ir a Porto de Galinhas, tente planejar sua viagem para o período de maré baixa, que é quando você poderá aproveitar as piscinas naturais — leia todas as dicas sobre a tábua de maré para ajudar a organizar sua viagem e as dicas completas de quando ir a Porto de Galinhas.</p>                        
+                    
+                </article>
+                <aside>
+                    <span>Curiosidades</span>
+                    <p><strong>1° - Em 4 dias você consegue aproveitar os principais passeios em Porto de Galinhas e ainda relaxar um pouco. Mas se você tiver uma semana disponível, ainda melhor, já que dessa forma você conseguirá explorar as redondezas, conhecer cidades vizinhas e reservar um tempo para descansar.</strong></p>
+                    <img src="https://img.freepik.com/fotos-gratis/bela-praia-tropical-mar-e-oceano-com-coqueiro-e-guarda-chuva-e-cadeira-no-ceu-azul_74190-8822.jpg?size=626&ext=jpg&ga=GA1.1.522103892.1689128395&semt=ais" alt="">
+                    <p><strong>2° - O sucesso da vila teve início por causa de suas piscinas naturais, que ficam na área central da vila, com acesso através de um passeio de jangada que você não deve deixar de fazer. O lugar é realmente lindo, cheio de peixes e com água cristalina. E a melhor praia de Porto de Galinhas, a Praia de Muro Alto, também não pode ficar de fora do seu roteiro. No período de maré baixa essa praia fica calminha, como uma lagoa... é uma delícia!.</strong></p>
+                    <img src="https://img.freepik.com/fotos-gratis/bela-paisagem-e-paisagem-urbana-na-cidade-de-hua-hin-em-torno-da-baia-do-mar-oceano_74190-9225.jpg?size=626&ext=jpg&ga=GA1.2.522103892.1689128395&semt=ais" alt="">
+                    <p><strong>3° - Outra opção muito legal é o passeio de buggy pelo litoral, que permite várias praias em um mesmo dia. A partir daí você pode ter uma visão geral e saber a quais praias de Porto de Galinhas tem vontade de voltar e passar mais tempo.</strong></p>
+                    <p><strong>Se a programação permitir, você ainda pode esticar sua viagem e conhecer destinos vizinhos, como a Praia de Carneiros, Maragogi ou Recife</strong></p>                        
+                    <p>Fonte: Prefeitura de Recife, Iphan,Governo de Pernambuco, Prefeitura de Recife</p>
+                </aside>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <nav id="nav_footer">
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Intagram</a></li>
+                <li><a href="">Youtube</a></li>
+            </ul>
+        </nav>
+        <span id="footer_span">&copy; Desenvolvido por Diego de Souza</span>
+
+    </footer>
+</body>
+</html>
