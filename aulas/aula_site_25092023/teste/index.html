@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Formulario HTML</h1>
+    <form action="">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha">
+        <label for="telefone">Telefone: </label>
+        <input type="tel" name="telefone" id="telefone">
+        <section>
+            <p>Nacionalidade: </p>
+            <input type="radio" name="nacionalidade" id="brasil" value="brasil">
+            <label for="brasil">Brasileiro(a)</label>
+            <input type="radio" name="nacionalidade" id="outro" value="brasil">
+            <label for="outro">Estrangeiro</label>
+        </section>
+        <section>
+            <p>Medio de Transporte: </p>
+            <input type="checkbox" name="meio-trasnporte" id="pe" value="pe">
+            <label for="pe">A pé</label>
+            <input type="checkbox" name="meio-trasnporte" id="bicicleta" value="bicicleta">
+            <label for="bicicleta">bicicleta</label>
+            <input type="checkbox" name="meio-trasnporte" id="carro" value="carro">
+            <label for="carro">Carro</label>
+        </section>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
