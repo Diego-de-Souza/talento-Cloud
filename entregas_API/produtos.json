@@ -1,0 +1,32 @@
+{
+    "itens": [
+        {
+            "id":"0001",
+            "nome": "computador",
+            "marca": "Asus",
+            "categoria": "eletroeletrônicos",
+            "preço": "2500,00",
+            "quantidade_em_estoque": "200",
+            "pronta_etrega": "true"
+        },
+        {
+            "id":"0003",
+            "nome": "teclado",
+            "marca": "Maxprint",
+            "categoria": "eletroeletrônicos",
+            "preço": "230,00",
+            "quantidade_em_estoque": "150",
+            "pronta_etrega": "true"
+        },
+        {
+            "id":"0018",
+            "nome": "Geladeira",
+            "marca": "Brastemp",
+            "categoria": "eletrodomésticos",
+            "preço": "8000,00",
+            "quantidade_em_estoque": "100",
+            "pronta_etrega": "false"
+        }
+    ]
+    
+}
