@@ -1,0 +1,16 @@
+
+
+.cadastroNovoProtudo {
+    background-color: rgb(98, 98, 98);
+    width: 400px;
+    border-radius: 8px;
+    padding: 2px 12px;
+}
+
+.cadastroNovoProtudo2{
+    background-color: rgb(159, 189, 36);
+    width: 400px;
+    border-radius: 8px;
+    padding: 2px 12px;
+    margin: 1rem 0;
+}
