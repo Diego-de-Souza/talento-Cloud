@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body style="padding-top: 60px;">
+    <!--menu de navegação com bootstrap-->
+    <nav class="navbar fixed-top navbar-expand-md bg-primary">
+        <div class="container">
+            <a href="/" class="navbar-brand">GDCAW</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--utilização do bootstrap para para container, cor de fundo e cor de letras-->
+    <div class="container ">
+        <h1 class="text-bg-primary py-4 ps-3">Bootstrap</h1>
+        <p>Primeiros passos com Bootstrap</p>
+    </div>
+
+    <!--Utilização do bootstrap para layout dos componentes-->
+    <div class="container text-center">
+        <div class="row row-cols-md-2 row-cols-lg-3">
+          <div class="col-12 col-md-12">
+            <section>
+                <h3>Primeira Noticia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum delectus sequi praesentium, vero assumenda reiciendis doloremque non earum nisi deserunt vitae incidunt repudiandae saepe adipisci! Ducimus est porro ipsum.</p>
+            </section>
+          </div>
+          <div class="col-12">
+            <section>
+                <h3>Segunda Noticia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum delectus sequi praesentium, vero assumenda reiciendis doloremque non earum nisi deserunt vitae incidunt repudiandae saepe adipisci! Ducimus est porro ipsum.</p>
+            </section>
+          </div>
+          <div class="col-12">
+            <section>
+                <h3>terceira Noticia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum delectus sequi praesentium, vero assumenda reiciendis doloremque non earum nisi deserunt vitae incidunt repudiandae saepe adipisci! Ducimus est porro ipsum.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!--utilização do bootstrap para componetes personalizados e animações js-->
+      <div class="container text-bg-secondary" style="padding: 2rem 1rem;">
+          <button class="btn btn-outline-primary btn-lg">
+            Clique aqui
+          </button>
+          <a href="#" class="btn btn-warning">Blog</a>
+          <p></p>
+          <p></p>
+          <label for="input-email">Email</label>
+          <input type="email" name="email" id="input-email">
+          <button class="btn btn-success" id="btn-email">Enviar</button>
+      </div>
+      <!--utilizando javascript com bootstrap-->
+      <div class="container" style="padding: 2rem 0;">
+          <p></p>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Item 01</li>
+                <li class="dropdown-item">Item 02</li>
+                <li class="dropdown-item">Item 03</li>
+            </ul>
+          </div>
+      </div>
+      <!--utilizando componentes predefinidos do bootstrap-->
+      <div class="container" style="padding: 2rem 0;">
+          <div class="card" style="width: 18rem;">
+            <img src="src/img/png-transparent-logo-html5-brand-design-text-logo-number.png" class="card-img-top" alt="..." style="padding: 1rem;">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">HTML é uma linguagem de marcação de texto...</p>
+              <a href="#" class="btn btn-primary">Vamos para aula</a>
+            </div>
+          </div>
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+</body>
+</html>
